@@ -6,7 +6,7 @@ app=Flask(__name__)
 
 #app.config['SQLALCHEMY_DATABASE_URI']='postgresql+psycopg2://postgres:Raj@localhost/quotes'
 app.config['SQLALCHEMY_DATABASE_URI']='postgres://kqqvmagdfxhmjn:d495f97c38dc48c45434282a7bf1991c3cc5b7f3df3b14a95bb90666a400a6e1@ec2-52-19-96-181.eu-west-1.compute.amazonaws.com:5432/d75vkqt6mdak25'
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=True
 
 db=SQLAlchemy(app)
 
